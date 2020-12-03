@@ -1,5 +1,5 @@
 #!/bin/bash
-# i have no idea of bash and i hate my life also
+# i have no idea of bash 
 
 
 
