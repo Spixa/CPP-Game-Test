@@ -4,7 +4,7 @@
 Player::Player() {
 	playerSprite = new sf::Sprite();
 	playerTexture = new sf::Texture();
-	playerTexture->loadFromFile("pic.png");
+	playerTexture->loadFromFile("res/pic.png");
 	playerSprite->setScale({1.5,1.5});
 	playerSprite->setTexture(*playerTexture);
 	sf::Vector2f spriteSize(playerSprite->getTexture()->getSize().x * playerSprite->getScale().x, playerSprite->getTexture()->getSize().y * playerSprite->getScale().y);
