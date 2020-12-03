@@ -14,26 +14,8 @@ CLIBS = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 	binary
 	setup
 
-binary : $(SOURCEFILES) $(HEADERFILES) 
+binary : setup $(SOURCEFILES) $(HEADERFILES) 
 	$(CC) $(CCFLAGS) $(OPTIMIZE) $(SOURCEFILES) $(HEADERFILES) -o $(BINNAME) $(CLIBS)
-
-main.cpp : setup
-
-Game.cpp : setup
-
-Player.cpp : setup
-
-PlayerController.cpp : setup
-
-Animation.cpp : setup
-
-Game.h : setup
-
-Player.h : setup
-
-PlayerController.h : setup
-
-Animation.h : setup
 
 setup :
 	cp $(SOURCEDIR)/* .
