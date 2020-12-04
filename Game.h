@@ -69,15 +69,21 @@ private:
 	sf::Clock deltaTimeClock;
 	float deltaTime;
 
+	/*
+	 * Self-made classes
+	 */
 	// Cozy place for classes:
-	Player* pl;
-	PlayerController* pl_c;
-	Animation* p_a;
-protected:
-	sf::RenderWindow* rw;
-	sf::View* view;
-	sf::Sprite* bg;
-	sf::Texture* bgT;
+	Player* pl;   				//Renderable:    Player
+	PlayerController* pl_c;			//Updatable: 	 PlayerController
+	Animation* p_a;				//Bifunctional:  Animation
+protected:					
+	/*
+	 *	SFML classes 
+	 */
+	sf::RenderWindow* rw;			// Renderwindow
+	sf::View* view;				// View
+	sf::Sprite* bg;				// Background sprite
+	sf::Texture* bgT;			// Background texture
 
 };
 
