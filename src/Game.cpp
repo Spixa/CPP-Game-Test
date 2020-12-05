@@ -18,7 +18,7 @@ void Game::initWindow() {
 
 	bg = new sf::Sprite(); // Background sprite
 	bgT = new sf::Texture(); // Background texture
-	bgT->loadFromFile("bg.png"); // Loading background texture
+	bgT->loadFromFile("res/bg.png"); // Loading background texture
 	bg->setTexture(*bgT); // Setting background texture
 	bg->setScale({4,4}); // Scaling the picture 4 times bigger (Prototype)
 }
