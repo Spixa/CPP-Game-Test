@@ -22,5 +22,5 @@ private:
 	
 
 };
-/// IT DOESNT EVEN HAVE 28 LINES WHAT
+/// IT DOESNT EVEN HAVE 28 LINES WHT
 #endif

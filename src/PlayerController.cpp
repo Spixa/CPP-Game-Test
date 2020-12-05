@@ -19,11 +19,11 @@ void PlayerController::controlPlayer(sf::Sprite* p,float deltaTime,Animation* an
 		p->move(0.0f,-0.5f);
 		anim->update(1,deltaTime);
         }
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::S))) {
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::S))) {  		// Diagonal: Up-Left
                  p->move(-0.5f,-0.5f);
                 anim->update(2,deltaTime);
 
-        } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::S))) {
+        } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::S))) { 		// Diagonal: Up-Right
                 p->move(0.5f,-0.5f);
                 anim->update(3,deltaTime);
 
@@ -38,11 +38,11 @@ void PlayerController::controlPlayer(sf::Sprite* p,float deltaTime,Animation* an
 		p->move(0.0f,0.5f);
 		anim->update(0,deltaTime);
         }
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::W))) {
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::W))) { 		// Diagonal: Down-Left
 		 p->move(-0.5f,0.5f);
                 anim->update(2,deltaTime);
 
-	} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::W))) {
+	} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !(sf::Keyboard::isKeyPressed(sf::Keyboard::W))) { 		// Diagonal: Down-Right
 		p->move(0.5f,0.5f);
                 anim->update(3,deltaTime);
 
